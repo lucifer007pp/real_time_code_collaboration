@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for react-select */
+.react-select__control {
+    @apply bg-white border border-gray-300 rounded-md shadow-sm;
+}
+
+.react-select__control--is-focused {
+    @apply border-blue-500 ring-1 ring-blue-500;
+}
+
+.react-select__menu {
+    @apply bg-white border border-gray-300 rounded-md shadow-lg;
+}
+
+.react-select__option {
+    @apply text-gray-900 hover:bg-blue-100;
+}
+
+.react-select__option--is-selected {
+    @apply bg-blue-500 text-white;
+}
+
+.react-select__option--is-focused {
+    @apply bg-blue-100;
+}
+
+.react-select__indicator-separator {
+    @apply bg-gray-300;
+}
+
+.react-select__dropdown-indicator {
+    @apply text-gray-400 hover:text-gray-500;
+}
